@@ -1,12 +1,28 @@
 <!DOCTYPE html>
-<html>
-    <title> Akorede First Web Game </title>
-    <head></head>
-    <body>
-        <div class ="game-object"></div>
-        <div id = "game-Content">
-            <canvas id = "game-Screen"></canvas>
-        </div>
-        <script type="module" src="logic/index.js"></script>
-    </body>
+<html lang="en">
+  <title>Akorede First WebGame</title>
+  <head> </head>
+  <body>
+    <style>
+      body {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        background: #000 url(assets/Undergroung-Bg.gif) no-repeat center;
+        background-size: 150%;
+        color: #fff;
+      }
+
+      .game-object {
+        display: none;
+      }
+    </style>
+    <div class="game-object">
+      <img src="assets/fish1.png" id="img-fish1" />
+    </div>
+    <div id="game-content">
+      <canvas id="game-screen"></canvas>
+    </div>
+    <script type="module" src="logic/index.js"></script>
+  </body>
 </html>
